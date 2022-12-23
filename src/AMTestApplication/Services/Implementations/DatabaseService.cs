@@ -57,13 +57,13 @@ namespace AMTestApplication.Services.Implementations
             DataTable dataTable = new DataTable();
             using (var sqlConnection = new SqlConnection(databaseConnectionString))
             {
-                sqlConnection.Open();
-                var sqlCommand = sqlConnection.CreateCommand();
-                sqlCommand.CommandText = "Select * from [data]";
-
-                SqlDataAdapter da = new SqlDataAdapter(sqlCommand);
                 try
                 {
+                    sqlConnection.Open();
+                    var sqlCommand = sqlConnection.CreateCommand();
+                    sqlCommand.CommandText = "Select * from [data]";
+
+                    SqlDataAdapter da = new SqlDataAdapter(sqlCommand);
                     da.Fill(dataTable);
                     loggerService.Info("ok");
                 }
@@ -87,12 +87,12 @@ namespace AMTestApplication.Services.Implementations
 
             using (var sqlConnection = new SqlConnection(databaseConnectionString))
             {
-                sqlConnection.Open();
-                var sqlCommand = sqlConnection.CreateCommand();
-                sqlCommand.CommandText = query;
-
                 try
                 {
+                    sqlConnection.Open();
+                    var sqlCommand = sqlConnection.CreateCommand();
+                    sqlCommand.CommandText = query;
+
                     await sqlCommand.ExecuteNonQueryAsync();
                     loggerService.Info("ok");
                 }
@@ -114,12 +114,12 @@ namespace AMTestApplication.Services.Implementations
 
             using (var sqlConnection = new SqlConnection(databaseConnectionString))
             {
-                sqlConnection.Open();
-                var sqlCommand = sqlConnection.CreateCommand();
-                sqlCommand.CommandText = "Select top 1 password from [password]";
-
                 try
                 {
+                    sqlConnection.Open();
+                    var sqlCommand = sqlConnection.CreateCommand();
+                    sqlCommand.CommandText = "Select top 1 password from [password]";
+
                     var o = await sqlCommand.ExecuteScalarAsync();
                     loggerService.Info("ok");
                     return (string)o;

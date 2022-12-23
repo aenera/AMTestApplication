@@ -1,4 +1,8 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\src"
+  ],
+  "SelectedNode": "\\src\\AMTestApplication.sln",
   "PreviewInSolutionExplorer": false
 }
