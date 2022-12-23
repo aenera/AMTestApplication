@@ -1,0 +1,73 @@
+﻿<Page x:Class="AMTestApplication.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AMTestApplication.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LoginPage">
+
+    <Grid>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="5"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="5"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="5"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" 
+                       Grid.Column="0" 
+                       Text="Database password" 
+                       Foreground="{DynamicResource MahApps.Brushes.ThemeForeground}"
+                       VerticalAlignment="Center"></TextBlock>
+            <TextBox x:Name="TextBox1" 
+                     Grid.Row="0"
+                     Grid.Column="1"
+                     MinWidth="200"
+                     Margin="10,0,0,0"
+                     Text="{Binding DatabasePassword, Mode=TwoWay}"
+                     VerticalAlignment="Center"
+                     TextAlignment="Center"></TextBox>
+            <TextBlock Grid.Row="2" 
+                       Grid.Column="0" 
+                       Text="Application password" 
+                       Foreground="{DynamicResource MahApps.Brushes.ThemeForeground}"
+                       VerticalAlignment="Center"></TextBlock>
+            <TextBox Grid.Row="2"
+                     Grid.Column="1"
+                     MinWidth="200"
+                     Margin="10,0,0,0"
+                     Text="{Binding ApplicationPassword, Mode=TwoWay}"
+                     VerticalAlignment="Center"
+                     TextAlignment="Center"></TextBox>
+
+            <Button Grid.Row="4" 
+                    Grid.Column="0" 
+                    Grid.ColumnSpan="2"
+                    Width="Auto"
+                    Height="Auto"
+                    HorizontalAlignment="Center"
+                    Content="Sign in"
+                    Command="{Binding LoginCommandAsync}">
+            </Button>
+            <TextBlock Grid.Row="6"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       HorizontalAlignment="Center"
+                       Text="Signing in failed"
+                       FontSize="20"
+                       Foreground="Red"
+                       Visibility="{Binding IsIncorrectLogin, Converter={StaticResource BooleanToVisibilityConverter}}">
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Page>
