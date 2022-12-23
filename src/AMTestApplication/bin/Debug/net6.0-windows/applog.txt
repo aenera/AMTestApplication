@@ -88,3 +88,26 @@
 2022-12-23 20:40:35.1981|INFO|AMTestApplication.Services.Implementations.LoggerService|Failed
 2022-12-23 21:48:45.4290|INFO|AMTestApplication.Services.Implementations.LoggerService|Signing in...
 2022-12-23 21:48:45.5616|INFO|AMTestApplication.Services.Implementations.LoggerService|PasswordGetAsync
+2022-12-23 21:50:14.1358|INFO|AMTestApplication.Services.Implementations.LoggerService|Signing in...
+2022-12-23 21:50:14.2657|INFO|AMTestApplication.Services.Implementations.LoggerService|PasswordGetAsync
+2022-12-23 21:50:14.6086|INFO|AMTestApplication.Services.Implementations.LoggerService|ok
+2022-12-23 21:50:14.6086|INFO|AMTestApplication.Services.Implementations.LoggerService|Signed in successfully
+2022-12-23 21:50:33.8881|INFO|AMTestApplication.Services.Implementations.LoggerService|Signing in...
+2022-12-23 21:50:33.9315|INFO|AMTestApplication.Services.Implementations.LoggerService|PasswordGetAsync
+2022-12-23 21:50:34.2125|INFO|AMTestApplication.Services.Implementations.LoggerService|ok
+2022-12-23 21:50:34.2178|INFO|AMTestApplication.Services.Implementations.LoggerService|Signed in successfully
+2022-12-23 21:50:35.5905|INFO|AMTestApplication.Services.Implementations.LoggerService|Loading a file...
+2022-12-23 21:50:42.9573|INFO|AMTestApplication.Services.Implementations.LoggerService|File is E:\Input Data_ПО.csv
+2022-12-23 21:50:42.9573|INFO|AMTestApplication.Services.Implementations.LoggerService|Data loading started...
+2022-12-23 21:50:42.9573|INFO|AMTestApplication.Services.Implementations.LoggerService|RawDataPostAsync
+2022-12-23 21:50:42.9573|INFO|AMTestApplication.Services.Implementations.LoggerService|ExecuteNonQueryAsync
+2022-12-23 21:50:42.9743|INFO|AMTestApplication.Services.Implementations.LoggerService|ok
+2022-12-23 21:50:42.9743|INFO|AMTestApplication.Services.Implementations.LoggerService|ExecuteNonQueryAsync
+2022-12-23 21:50:42.9743|INFO|AMTestApplication.Services.Implementations.LoggerService|ok
+2022-12-23 21:50:43.1037|INFO|AMTestApplication.Services.Implementations.LoggerService|ok
+2022-12-23 21:50:43.1037|INFO|AMTestApplication.Services.Implementations.LoggerService|Processing data
+2022-12-23 21:50:43.1037|INFO|AMTestApplication.Services.Implementations.LoggerService|ExecuteNonQueryAsync
+2022-12-23 21:50:43.1150|INFO|AMTestApplication.Services.Implementations.LoggerService|ok
+2022-12-23 21:50:43.1150|INFO|AMTestApplication.Services.Implementations.LoggerService|DataGetAsync
+2022-12-23 21:50:43.1150|INFO|AMTestApplication.Services.Implementations.LoggerService|ok
+2022-12-23 21:50:43.1237|INFO|AMTestApplication.Services.Implementations.LoggerService|Data processed
