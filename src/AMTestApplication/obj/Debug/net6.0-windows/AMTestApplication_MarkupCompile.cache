@@ -5,15 +5,15 @@ winexe
 C#
 .cs
 E:\Test\AMTestApplication\src\AMTestApplication\obj\Debug\net6.0-windows\
-AMTestApplication
+AMTestApplication_z4co3g1a_wpftmp
 none
 false
-TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 E:\Test\AMTestApplication\src\AMTestApplication\App.xaml
 3-472313676
 
-21-822765440
-202-1327848347
+25495371643
+4041639270602
 Pages\DataPage.xaml;Pages\LoginPage.xaml;Views\MainWindow.xaml;
 
 True

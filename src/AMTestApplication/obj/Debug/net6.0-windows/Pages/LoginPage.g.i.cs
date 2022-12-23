@@ -61,7 +61,7 @@ namespace AMTestApplication.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AMTestApplication;V1.0.0.0;component/pages/loginpage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AMTestApplication;component/pages/loginpage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\LoginPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

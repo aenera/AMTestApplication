@@ -64,7 +64,7 @@ namespace AMTestApplication.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AMTestApplication;V1.0.0.0;component/pages/datapage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AMTestApplication;component/pages/datapage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Pages\DataPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
